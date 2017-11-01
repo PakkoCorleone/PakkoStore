@@ -1,0 +1,41 @@
+.accordeon {
+			background-color: #f0f0f0;
+        	border-radius: 5px;
+        	margin: 5px;
+        	width: 41.07142857142857%;
+        	height: 110px;
+        	vertical-align: bottom;
+        	display: inherit;
+        	cursor: pointer;
+        	display: inline-block;
+}
+	.acc-head{
+
+		vertical-align: middle;
+	}
+	.rateplace{
+			display: inline-block;
+			background-color: #808080;
+			border-radius: 10px;
+			padding: 15px 25px;
+			color: #fff;
+			margin-left: -1.8695652173913%;
+			margin-top: 35px;
+			font-weight: bold;
+			float: left;
+	}
+	.acc-head span:nth-child(2){
+			text-decoration: underline;
+			color: #ff6600;
+			padding: 45px;
+			display: inline-block;
+			float: right;
+			margin-right: 25px;
+	}
+
+	.acc-body {
+		padding: 10px;
+		border-bottom: 1px solid #c0c0c0;
+		margin-bottom: 5px;
+		display: none;
+	}

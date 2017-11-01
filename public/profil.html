@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Профиль</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="../css/header.min.css">
+    <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="../css/my-styles.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="contentOverlay" class="content-overlay"></div>
+    <header class="site-header header-cabinet-page">
+        <div class="header-top flex container">
+            <div id="menu-toggle" class="menu-toggle burger-wrapper hidden-from-md"><img src="../img/icons/svg/burger.svg" alt="Burger menu icon" class="burger-img"></div>
+            <div class="logo-wrapper"><a href="http://goldcoach.ru" class="logo-link"><img src="../img/logos/logo_gc.png" alt="Gold Coach" class="img-logo"></a></div>
+            <div class="contacts-wrapper visible-from-md">
+                <p class="contacts-title">Заботливая служба поддержки</p>
+                <ul class="phone-list">
+                    <li class="phone-list-item phone-list-item-1"><a href="tel:380442213224">+38 044-221-32-24</a></li>
+                    <li class="phone-list-item phone-list-item-2"><a href="tel:74951338224">+7 495-133-82-24</a></li>
+                </ul>
+                <div class="support-chats  flex ">
+                    <div class="support-chat telegram"><a href="javascript:void(0);" class="support-link"></a></div>
+                    <div class="support-chat viber"><a href="javascript:void(0);" class="support-link"></a></div>
+                    <div class="support-chat skype"><a href="javascript:void(0);" class="support-link"></a></div>
+                </div>
+            </div>
+            <div class="account-toggle account-icon-wrapper"><img src="../img/icons/head.png" alt="Account icon" class="account-img"></div>
+        </div>
+        <div id="mobileMenu" class="mobile-block mobile-menu nav-menu">
+            <div class="menu-mobile-wrapper">
+                <h3 class="menu-title"> <span class="menu-toggle close-menu"><img src="../img/icons/svg/close.svg" alt="Close img" class="exit-img "></span>Меню</h3>
+                <ul class="menu-list">
+                    <li class="menu-list-item schedule-item"><a href="schedule.html">Расписание занятий</a></li>
+                    <li class="menu-list-item module1-item"><a href="module1.html">Модуль 1</a></li>
+                    <li class="menu-list-item module2-item"><a href="javascript:void(0);">Модуль 2</a></li>
+                    <li class="menu-list-item module3-item list-item-disabled"><a href="javascript:void(0);">Модуль 3</a></li>
+                    <li class="menu-list-item module4-item list-item-disabled"><a href="javascript:void(0);">Модуль 4</a></li>
+                    <li class="menu-list-item bonus-talk-item"><a href="javascript:void(0);">Бонусная сессия</a></li>
+                    <li class="menu-list-item bonuses-item"><a href="javascript:void(0);">Бонусы</a></li>
+                    <li class="menu-list-item rules-item"><a href="rules.html">Правила</a></li>
+                    <li class="menu-list-item instructions-item"><a href="instructions.html">Инструкция</a></li>
+                    <li class="menu-list-item rate-item"><a href="rate.html">Общий рейтинг</a></li>
+                </ul>
+                <a href="javacript:void(0);" class="mobile-menu-btn btn-cta">Получить доп. балы</a>
+                <div class="designations-block">
+                    <p class="designations-title">Обозначения</p>
+                    <ul class="designations-list">
+                        <li class="designation des-empty">Нет мероприятия</li>
+                        <li class="designation des-planned">Модуль запланирован</li>
+                        <li class="designation des-past">Модуль проведен</li>
+                    </ul>
+                </div>
+                <div class="close-up-btn"><a href="#" class="menu-toggle"><img src="../img/icons/arrow-up.png" alt="Arrow Up icon"></a></div>
+            </div>
+        </div>
+        <div id="mobileAccount" class="mobile-block mobile-account nav-account">
+            <div class="account-menu-wrapper">
+                <div class="menu-title"> <span class="close-menu account-toggle"><img src="../img/icons/svg/close.svg" alt="Close img" class="exit-img close-menu"></span></div>
+                <div class="account-title">
+                    <div class="avatar-wrapper">
+                        <div class="img-wrapper">
+                        <img src="../img/icons/head.png" alt="Avata placeholder" class="avatar">
+                    </div>
+                    </div>
+                    <a href="#" class="account-link">
+                        <h3 class="account-firstname">Иван</h3>
+                        <h4 class="account-surname">Замбицкий</h4>
+                    </a>
+                </div>
+                <div class="account-info">
+                    <div class="score"><span class="score-numbers" id="scoreNumber">119<img src="../img/icons/stars.png" alt="" class="achieve-icon"></span>
+                        <br><span class="score-text">баллов</span></div>
+                    <h4>Ваш прогресс по тренингу</h4>
+                    <div class="progress-bar">
+                        <div class="progress-stroke progress-25"></div>
+                        <div class="progress-stroke progress-50"></div>
+                        <div class="progress-stroke progress-75"></div>
+                        <progress class="progress" max="100" value="50"></progress>
+                        <p class="progress-text">50% из 100%</p>
+                        <a href="javascript:void(0);" class="account-links edit-profile">Редактировать профиль</a>
+                        <a href="javascript:void(0);" class="account-links exit-profile">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="hero-wrapper flex">
+                <div class="hero-img-wrapper">
+                    <img src="../img/logos/logo_ex_start.png" alt="Extreme Start Logo" class="hero-img">
+                </div>
+                <div class="hero-text-wrapper">
+                    <p class="hero-text">Система «Экстремальный Старт» — это 3 недельный интерактивный онлайн курс старта дела жизни, дающий мгновенный прорыв,
+                        <br> который базируется на практичных и проверенных идеях, стратегиях и ежедневных ритуалов величайших предпринимателей, мастеров, артистов и гениев, которых только мир знал.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="sectionTime" class="section-1 section-time section-time-lg">
+        <div class="daytime-timer">
+            <h4 class="timer-title">Доступ к сайту будет закрыт через:</h4>
+            <!-- TIMER -->
+            <div class="timer-wrapper">
+                <div class="timer-big">
+                    <script src="http://megatimer.ru/s/5a3fa94350d31142cecf228de5c7871b.js"></script>
+                </div>
+            </div>
+            <!--  <div class="designations-block">
+                        <p class="designations-title">Обозначения</p>
+                        <ul class="designations-list">
+                            <li class="designation des-empty">Нет мероприятия</li>
+                            <li class="designation des-planned">Модуль запланирован</li>
+                            <li class="designation des-past">Модуль проведен</li>
+                        </ul>
+                    </div> -->
+        </div>
+    </section>
+    <div id="contentWrapper" class="flex content-wrapper container">
+        <aside class="site-aside">
+            <div id="mobileAccount" class="mobile-block nav-account">
+                <div class="account-menu-wrapper">
+                    <div class="account-title">
+                        <div class="avatar-wrapper">
+                            <div class="img-wrapper">
+                        <img src="../img/icons/head.png" alt="Avata placeholder" class="avatar"> 
+                    </div>
+                        </div>
+                        <a href="#">
+                            <h3 class="account-firstname">Иван</h3>
+                            <h4 class="account-surname">Замбицкий</h4>
+                        </a>
+                    </div>
+                    <div class="account-info">
+                        <div class="score"><span class="score-numbers" id="scoreNumber">119<img src="../img/icons/stars.png" alt="" class="achieve-icon"></span>
+                            <br><span class="score-text">баллов</span></div>
+                        <h4>Ваш прогресс по тренингу</h4>
+                        <div class="progress-bar">
+                            <div class="progress-stroke progress-25"></div>
+                            <div class="progress-stroke progress-50"></div>
+                            <div class="progress-stroke progress-75"></div>
+                            <progress class="progress" max="100" value="50"></progress>
+                            <p class="progress-text">50% из 100%</p>
+                            <a href="javascript:void(0);" class="account-links edit-profile">Редактировать профиль</a>
+                            <a href="javascript:void(0);" class="account-links exit-profile">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobileMenu" class="mobile-block  nav-menu">
+                <div class="menu-mobile-wrapper">
+                    <ul class="menu-list">
+                        <li class="menu-list-item schedule-item"><a href="schedule.html">Расписание занятий</a></li>
+                        <li class="menu-list-item module1-item"><a href="module1.html">Модуль 1</a></li>
+                        <li class="menu-list-item module2-item"><a href="javascript:void(0);">Модуль 2</a></li>
+                        <li class="menu-list-item module3-item list-item-disabled"><a href="javascript:void(0);">Модуль 3</a></li>
+                        <li class="menu-list-item module4-item list-item-disabled"><a href="javascript:void(0);">Модуль 4</a></li>
+                        <li class="menu-list-item rules-item"><a href="dz.html">Дополнительное ДЗ</a></li>
+                        <li class="menu-list-item bonus-talk-item"><a href="javascript:void(0);">Бонусная сессия</a></li>
+                        <li class="menu-list-item bonuses-item"><a href="javascript:void(0);">Бонусы</a></li>
+                        <li class="menu-list-item rules-item"><a href="rules.html">Правила</a></li>
+                        <li class="menu-list-item instructions-item"><a href="instructions.html">Инструкция</a></li>
+                        <li class="menu-list-item rate-item"><a href="rate.html">Общий рейтинг</a></li>
+                    </ul>
+                    <a href="javacript:void(0);" class="mobile-menu-btn btn-cta">Получить доп. балы</a>
+                </div>
+            </div>
+        </aside>
+        <main class="main-content flex">
+            <section id="sectionTime" class="section-1 section-time section-time-md">
+                <div class="daytime-timer">
+                    <h4 class="timer-title">Доступ к сайту будет закрыт через:</h4>
+                    <!-- TIMER -->
+                    <div class="timer-wrapper">
+                        <div class="timer-small">
+                            <script src="http://megatimer.ru/s/b07edfbcd6a96992d5977ef8d618244a.js"></script>
+                        </div>
+                        <div class="timer-big">
+                            <script src="http://megatimer.ru/s/5a3fa94350d31142cecf228de5c7871b.js"></script>
+                        </div>
+                    </div>
+                    <!--  <div class="designations-block">
+                        <p class="designations-title">Обозначения</p>
+                        <ul class="designations-list">
+                            <li class="designation des-empty">Нет мероприятия</li>
+                            <li class="designation des-planned">Модуль запланирован</li>
+                            <li class="designation des-past">Модуль проведен</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </section>
+            <div id="flexChildrenWrapper" class="flex-children-wrapper">
+                <section class="section-2 section-bonuses">
+                    <div class="profil-title">
+                        <h3>Профиль</h3>
+                        <h4 class="profil-sub-title">Ваш профиль</h4>
+                    </div>
+                    <div class="yours-profil">
+                        <div class="profil-image">
+                            <img src="../img/icons/head.png" alt="avatar">
+                            <p class="profil-point">500</p>
+                            <p>Мои Баллы:</p>
+                        </div>
+                        <div class="change-profil">
+                            <div class="change-profil-img">
+                                <p class="profil-text">Изменить Аватар</p>
+                                <a class="change-image-link" href="#">Измините фото профиля</a>
+                                <p class="profil-badge">+20</p>
+                            </div>
+                            <form action="#" method="POST" class="profil-form">
+                                <div class="main-info">
+                                    <input class="profil-form-field" type="text" placeholder="&nbsp &nbsp Ваше имя и фамилия" name="name">
+                                    <input class="profil-form-field" type="email" placeholder="&nbsp &nbsp Ваш имейл" name="email-address">
+                                    <div class="badge-active">
+                                        <input class="profil-form-field" type="tel" placeholder="&nbsp &nbsp Номер телефона" name="telephon-number">
+                                        <p class="input-badge">+15</p>
+                                    </div>
+                                    <div class="badge-active">
+                                        <input class="profil-form-field" type="text" placeholder="&nbsp &nbsp Город" name="city">
+                                        <p class="input-badge">+10</p>
+                                    </div>
+                                    <div class="badge-active">
+                                        <input class="profil-form-field" type="text" placeholder="&nbsp &nbsp Страна" name="country">
+                                        <p class="input-badge">+10</p>
+                                    </div>
+                                </div>
+                                <div class="hr"></div>
+                                <div class="business-info">
+                                    <div class="badge-active business-radio">
+                                        <p class="profil-text">У вас есть бизнес?</p>
+                                        <input type="radio" class="radio" id="radio-1" name="business" value="yes" checked>
+                                        <label class="business-label" for="radio-1">Да</label>
+                                        <input type="radio" class="radio" id="radio-2" name="business" value="no">
+                                        <label class="business-label" for="radio-2">Нет</label>
+                                        <p class="input-badge">+10</p>
+                                    </div>
+                                    <div class="badge-active">
+                                        <input class="profil-form-field" type="text" placeholder="&nbsp &nbsp Город" name="city">
+                                        <p class="input-badge">+10</p>
+                                    </div>
+                                </div>
+                                <div class="your-work">
+                                    <p class="profil-text">В какой нише вы работаете?</p>
+                                    <p class="input-badge">+5</p>
+                                </div>
+                                <input class="profil-form-field" type="text" name="field-activity">
+                                <div class="profil-form-end">
+                                    <div class="profil-button">
+                                        <button type="submit">Сохранить</button>
+                                    </div>
+                                    <div class="open-info">
+                                        <label class="open-info-label" for="checkbox-1">
+                                            <input class="open-info-checkbox" type="checkbox" id="checkbox-1" name="open-info" value="yes" checked>
+                                            <i></i>
+                                            Открыть контактную информацию
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer class="footer-cabinet">
+        <div class="footer-cabinet-top flex">
+            <div class="contacts-wrapper hidden-from-md">
+                <p class="contacts-title">Заботливая служба поддержки</p>
+                <ul class="phone-list">
+                    <li class="phone-list-item phone-list-item-1"><a href="tel:380442213224">+38 044-221-32-24</a></li>
+                    <li class="phone-list-item phone-list-item-2"><a href="tel:74951338224">+7 495-133-82-24</a></li>
+                </ul>
+            </div>
+            <div class="support-references">
+                <p class="ref-title text-weak">Задать вопрос</p>
+                <div class="support-chats flex ">
+                    <div class="support-chat telegram"><a href="javascript:void(0);" class="support-link"></a></div>
+                    <div class="support-chat viber"><a href="javascript:void(0);" class="support-link"></a></div>
+                    <div class="support-chat skype"><a href="javascript:void(0);" class="support-link"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-cabinet-bottom">
+            <div class="copyrights">
+                <p>© 2017 Экстремальный Старт.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../libs/libs.min.js"></script>
+    <script src="../js/scripts.min.js"></script>
+</body>
+</html>

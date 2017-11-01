@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="../css/header.min.css">
+    <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+        <link rel="stylesheet" href="../css/main.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="contentOverlay" class="content-overlay"></div>
+    <header class="site-header header-cabinet-page">
+        <div class="header-top flex container">
+            <div id="menu-toggle" class="menu-toggle burger-wrapper hidden-from-md"><img src="../img/icons/svg/burger.svg" alt="Burger menu icon" class="burger-img"></div>
+            <div class="logo-wrapper"><a href="http://goldcoach.ru" class="logo-link"><img src="../img/logos/logo_gc.png" alt="Gold Coach" class="img-logo"></a></div>
+            <div class="contacts-wrapper visible-from-md">
+                <p class="contacts-title">Заботливая служба поддержки</p>
+                <ul class="phone-list">
+                    <li class="phone-list-item phone-list-item-1"><a href="tel:380442213224">+38 044-221-32-24</a></li>
+                    <li class="phone-list-item phone-list-item-2"><a href="tel:74951338224">+7 495-133-82-24</a></li>
+                </ul>
+                <div class="support-chats  flex ">
+                    <div class="support-chat telegram"><a href="javascript:void(0);" class="support-link"></a></div>
+                    <div class="support-chat viber"><a href="javascript:void(0);" class="support-link"></a></div>
+                    <div class="support-chat skype"><a href="javascript:void(0);" class="support-link"></a></div>
+                </div>
+            </div>
+            <div class="account-toggle account-icon-wrapper"><img src="../img/icons/head.png" alt="Account icon" class="account-img"></div>
+        </div>
+        <div id="mobileMenu" class="mobile-block mobile-menu nav-menu">
+            <div class="menu-mobile-wrapper">
+                <h3 class="menu-title"> <span class="menu-toggle close-menu"><img src="../img/icons/svg/close.svg" alt="Close img" class="exit-img "></span>Меню</h3>
+                <ul class="menu-list">
+                    <li class="menu-list-item schedule-item active-item"><a href="javascript:void(0);">Расписание занятий</a></li>
+                    <li class="menu-list-item module1-item"><a href="module1.html">Модуль 1</a></li>
+                    <li class="menu-list-item module2-item"><a href="javascript:void(0);">Модуль 2</a></li>
+                    <li class="menu-list-item module3-item list-item-disabled"><a href="javascript:void(0);">Модуль 3</a></li>
+                    <li class="menu-list-item module4-item list-item-disabled"><a href="javascript:void(0);">Модуль 4</a></li>
+                    <li class="menu-list-item rules-item"><a href="dz.html">Дополнительное ДЗ</a></li>
+                    <li class="menu-list-item bonus-talk-item"><a href="javascript:void(0);">Бонусная сессия</a></li>
+                    <li class="menu-list-item bonuses-item"><a href="bonuses.html">Бонусы</a></li>
+                    <li class="menu-list-item rules-item"><a href="rules.html">Правила</a></li>
+                    <li class="menu-list-item instructions-item"><a href="instructions.html">Инструкция</a></li>
+                    <li class="menu-list-item rate-item"><a href="rate.html">Общий рейтинг</a></li>
+                </ul>
+                <a href="javacript:void(0);" class="mobile-menu-btn btn-cta">Получить доп. балы</a>
+                <div class="designations-block">
+                    <p class="designations-title">Обозначения</p>
+                    <ul class="designations-list">
+                        <li class="designation des-empty">Нет мероприятия</li>
+                        <li class="designation des-planned">Модуль запланирован</li>
+                        <li class="designation des-past">Модуль проведен</li>
+                    </ul>
+                </div>
+                <div class="close-up-btn"><a href="#" class="menu-toggle"><img src="../img/icons/arrow-up.png" alt="Arrow Up icon"></a></div>
+            </div>
+        </div>
+        <div id="mobileAccount" class="mobile-block mobile-account nav-account">
+            <div class="account-menu-wrapper">
+                <div class="menu-title"> <span class="close-menu account-toggle"><img src="../img/icons/svg/close.svg" alt="Close img" class="exit-img close-menu"></span></div>
+                <div class="account-title">
+                    <div class="avatar-wrapper">
+                        <div class="img-wrapper">
+                        <img src="../img/icons/head.png" alt="Avata placeholder" class="avatar"> 
+                    </div>
+                    </div>
+                    <h3 class="account-firstname">Иван</h3>
+                    <h4 class="account-surname">Замбицкий</h4>
+                </div>
+                <div class="account-info">
+                    <div class="score"><span class="score-numbers" id="scoreNumber">119<img src="../img/icons/stars.png" alt="" class="achieve-icon"></span>
+                        <br><span class="score-text">баллов</span></div>
+                    <h4>Ваш прогресс по тренингу</h4>
+                    <div class="progress-bar">
+                        <div class="progress-stroke progress-25"></div>
+                        <div class="progress-stroke progress-50"></div>
+                        <div class="progress-stroke progress-75"></div>
+                        <progress class="progress" max="100" value="50"></progress>
+                        <p class="progress-text">50% из 100%</p>
+                        <a href="javascript:void(0);" class="account-links edit-profile">Редактировать профиль</a>
+                        <a href="javascript:void(0);" class="account-links exit-profile">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="hero-wrapper flex">
+                <div class="hero-img-wrapper">
+                    <img src="../img/logos/logo_ex_start.png" alt="Extreme Start Logo" class="hero-img">
+                </div>
+                <div class="hero-text-wrapper">
+                    <p class="hero-text">Система «Экстремальный Старт» — это 3 недельный интерактивный онлайн курс старта дела жизни, дающий мгновенный прорыв,
+                        <br> который базируется на практичных и проверенных идеях, стратегиях и ежедневных ритуалов величайших предпринимателей, мастеров, артистов и гениев, которых только мир знал.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="sectionTime" class="section-1 section-time section-time-lg">
+        <div class="daytime-timer">
+            <h4 class="timer-title">Доступ к сайту будет закрыт через:</h4>
+            <!-- TIMER -->
+            <div class="timer-wrapper">
+                <div class="timer-big">
+                    <script src="http://megatimer.ru/s/5a3fa94350d31142cecf228de5c7871b.js"></script>
+                </div>
+            </div>
+            <!--  <div class="designations-block">
+                        <p class="designations-title">Обозначения</p>
+                        <ul class="designations-list">
+                            <li class="designation des-empty">Нет мероприятия</li>
+                            <li class="designation des-planned">Модуль запланирован</li>
+                            <li class="designation des-past">Модуль проведен</li>
+                        </ul>
+                    </div> -->
+        </div>
+    </section>
+    <div id="contentWrapper" class="flex content-wrapper">
+        <aside class="site-aside">
+            <div id="mobileAccount" class="mobile-block nav-account">
+                <div class="account-menu-wrapper">
+                    <div class="account-title">
+                        <div class="avatar-wrapper">
+                            <div class="img-wrapper">
+                        <img src="../img/icons/head.png" alt="Avata placeholder" class="avatar"> 
+                    </div>
+                        </div>
+                        <h3 class="account-firstname">Иван</h3>
+                        <h4 class="account-surname">Замбицкий</h4>
+                    </div>
+                    <div class="account-info">
+                        <div class="score"><span class="score-numbers" id="scoreNumber">119<img src="../img/icons/stars.png" alt="" class="achieve-icon"></span>
+                            <br><span class="score-text">баллов</span></div>
+                        <h4>Ваш прогресс по тренингу</h4>
+                        <div class="progress-bar">
+                            <div class="progress-stroke progress-25"></div>
+                            <div class="progress-stroke progress-50"></div>
+                            <div class="progress-stroke progress-75"></div>
+                            <progress class="progress" max="100" value="50"></progress>
+                            <p class="progress-text">50% из 100%</p>
+                            <a href="javascript:void(0);" class="account-links edit-profile">Редактировать профиль</a>
+                            <a href="javascript:void(0);" class="account-links exit-profile">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobileMenu" class="mobile-block  nav-menu">
+                <div class="menu-mobile-wrapper">
+                    <ul class="menu-list">
+                        <li class="menu-list-item schedule-item active-item"><a href="javascript:void(0);">Расписание занятий</a></li>
+                        <li class="menu-list-item module1-item"><a href="module1.html">Модуль 1</a></li>
+                        <li class="menu-list-item module2-item"><a href="javascript:void(0);">Модуль 2</a></li>
+                        <li class="menu-list-item module3-item list-item-disabled"><a href="javascript:void(0);">Модуль 3</a></li>
+                        <li class="menu-list-item module4-item list-item-disabled"><a href="javascript:void(0);">Модуль 4</a></li>
+                        <li class="menu-list-item rules-item"><a href="dz.html">Дополнительное ДЗ</a></li>
+                        <li class="menu-list-item bonus-talk-item"><a href="javascript:void(0);">Бонусная сессия</a></li>
+                        <li class="menu-list-item bonuses-item"><a href="bonuses.html">Бонусы</a></li>
+                        <li class="menu-list-item rules-item"><a href="rules.html">Правила</a></li>
+                        <li class="menu-list-item instructions-item"><a href="instructions.html">Инструкция</a></li>
+                        <li class="menu-list-item rate-item"><a href="rate.html">Общий рейтинг</a></li>
+                    </ul>
+                    <a href="javacript:void(0);" class="mobile-menu-btn btn-cta">Получить доп. балы</a>
+                </div>
+            </div>
+        </aside>
+        <main class="main-content flex">
+            <section id="sectionTime" class="section-1 section-time section-time-md">
+                <div class="daytime-timer">
+                    <h4 class="timer-title">Доступ к сайту будет закрыт через:</h4>
+                    <!-- TIMER -->
+                    <div class="timer-wrapper">
+                        <div class="timer-small">
+                            <script src="http://megatimer.ru/s/b07edfbcd6a96992d5977ef8d618244a.js"></script>
+                        </div>
+                        <div class="timer-big">
+                            <script src="http://megatimer.ru/s/5a3fa94350d31142cecf228de5c7871b.js"></script>
+                        </div>
+                    </div>
+                    <!--  <div class="designations-block">
+                        <p class="designations-title">Обозначения</p>
+                        <ul class="designations-list">
+                            <li class="designation des-empty">Нет мероприятия</li>
+                            <li class="designation des-planned">Модуль запланирован</li>
+                            <li class="designation des-past">Модуль проведен</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </section>
+            <div id="flexChildrenWrapper" class="flex-children-wrapper">
+                <section class="section-2 section-date">
+                    <div class="daytime-calendar">
+                        <h3 class="calendar-title hidden-from-sm">Даты проведения модулей</h3>
+                      
+                        <div class="calendar">
+                          <button class="btn-ctrl-slider ctrl-prev-slide"></button><button class="btn-ctrl-slider ctrl-next-slide"></button>
+                        	<div class="calendar-wrapper">
+
+                            <div id="sliderSchedule" class="slider-wrapper">
+
+                                <div class="calendar-month calendar-month-1">
+                                    <time datetime="2017" class="year">
+                                        <time datetime="2017-04" class="month">
+                                            <span>Апрель</span>
+                                            <time datetime="2017-W27" class="week week-heading">
+                                                <time datetime="2017-12-01">пн</time>
+                                                <time datetime="2017-12-02">вт</time>
+                                                <time datetime="2017-12-03">ср</time>
+                                                <time datetime="2017-12-04">чт</time>
+                                                <time datetime="2017-12-05">пт</time>
+                                                <time datetime="2017-12-05">сб</time>
+                                                <time datetime="2017-12-05">вс</time>
+                                            </time>
+                                            <time datetime="2017-W27" class="week week-first">
+                                                <time datetime="2017-04-01">30</time>
+                                                <time datetime="2017-04-01">31</time>
+                                                <time datetime="2017-04-01">1</time>
+                                                <time datetime="2017-04-02">2</time>
+                                                <time datetime="2017-04-03">3</time>
+                                                <time datetime="2017-04-04">4</time>
+                                                <time datetime="2017-04-05">5</time>
+                                            </time>
+                                            <time datetime="2017-W28" class="week">
+                                                <time datetime="2017-04-06">6</time>
+                                                <time datetime="2017-04-04">7</time>
+                                                <time datetime="2017-04-08">8</time>
+                                                <time datetime="2017-04-09">9</time>
+                                                <time datetime="2017-04-10">10</time>
+                                                <time datetime="2017-04-11" class="event-sux">11</time>
+                                                <time datetime="2017-04-12">12</time>
+                                            </time>
+                                            <time datetime="2017-W29" class="week">
+                                                <time datetime="2017-04-13">13</time>
+                                                <time datetime="2017-04-14">14</time>
+                                                <time datetime="2017-04-15">15</time>
+                                                <time datetime="2017-04-16" class="event-planned">16</time>
+                                                <time datetime="2017-04-17">17</time>
+                                                <time datetime="2017-04-18">18</time>
+                                                <time datetime="2017-04-19">19</time>
+                                            </time>
+                                            <time datetime="2017-W30" class="week">
+                                                <time datetime="2017-04-20">20</time>
+                                                <time datetime="2017-04-21">21</time>
+                                                <time datetime="2017-04-22">22</time>
+                                                <time datetime="2017-04-23">23</time>
+                                                <time datetime="2017-04-24">24</time>
+                                                <time datetime="2017-04-25">25</time>
+                                                <time datetime="2017-04-26">26</time>
+                                            </time>
+                                            <time datetime="2017-W31" class="week">
+                                                <time datetime="2017-04-27">27</time>
+                                                <time datetime="2017-04-28">28</time>
+                                                <time datetime="2017-04-29">29</time>
+                                                <time datetime="2017-04-30">30</time>
+                                                <time datetime="2017-04-31">31</time>
+                                                <time datetime="2017-04-31">1</time>
+                                                <time datetime="2017-04-31">2</time>
+                                            </time>
+                                        </time>
+                                    </time>
+                                </div>
+                                <div class="calendar-month calendar-month-2">
+                                    <time datetime="2017" class="year">
+                                        <time datetime="2017-05" class="month">
+                                            <span>Май</span>
+                                            <time datetime="2017-W27" class="week week-heading">
+                                                <time datetime="2017-12-01">пн</time>
+                                                <time datetime="2017-12-02">вт</time>
+                                                <time datetime="2017-12-03">ср</time>
+                                                <time datetime="2017-12-04">чт</time>
+                                                <time datetime="2017-12-05">пт</time>
+                                                <time datetime="2017-12-05">сб</time>
+                                                <time datetime="2017-12-05">вс</time>
+                                            </time>
+                                            <time datetime="2017-W27" class="week week-first">
+                                                <time datetime="2017-04-01">30</time>
+                                                <time datetime="2017-04-01">31</time>
+                                                <time datetime="2017-05-01">1</time>
+                                                <time datetime="2017-05-02">2</time>
+                                                <time datetime="2017-05-03">3</time>
+                                                <time datetime="2017-05-04">4</time>
+                                                <time datetime="2017-05-05">5</time>
+                                            </time>
+                                            <time datetime="2017-W28" class="week">
+                                                <time datetime="2017-05-06">6</time>
+                                                <time datetime="2017-05-05">7</time>
+                                                <time datetime="2017-05-08">8</time>
+                                                <time datetime="2017-05-09">9</time>
+                                                <time datetime="2017-05-10">10</time>
+                                                <time datetime="2017-05-11">11</time>
+                                                <time datetime="2017-05-12">12</time>
+                                            </time>
+                                            <time datetime="2017-W29" class="week">
+                                                <time datetime="2017-05-13">13</time>
+                                                <time datetime="2017-05-14">14</time>
+                                                <time datetime="2017-05-15">15</time>
+                                                <time datetime="2017-05-16">16</time>
+                                                <time datetime="2017-05-17">17</time>
+                                                <time datetime="2017-05-18">18</time>
+                                                <time datetime="2017-05-19">19</time>
+                                            </time>
+                                            <time datetime="2017-W30" class="week">
+                                                <time datetime="2017-05-20">20</time>
+                                                <time datetime="2017-05-21">21</time>
+                                                <time datetime="2017-05-22">22</time>
+                                                <time datetime="2017-05-23">23</time>
+                                                <time datetime="2017-05-24" class="event-planned">24</time>
+                                                <time datetime="2017-05-25">25</time>
+                                                <time datetime="2017-05-26">26</time>
+                                            </time>
+                                            <time datetime="2017-W31" class="week">
+                                                <time datetime="2017-05-27">27</time>
+                                                <time datetime="2017-05-28">28</time>
+                                                <time datetime="2017-05-29">29</time>
+                                                <time datetime="2017-05-30">30</time>
+                                                <time datetime="2017-05-31">31</time>
+                                            </time>
+                                        </time>
+                                    </time>
+                                </div>
+                                <div class="calendar-month calendar-month-3">
+                                    <time datetime="2017" class="year">
+                                        <time datetime="2017-06" class="month">
+                                            <span>Июнь</span>
+                                            <time datetime="2017-W27" class="week week-heading">
+                                                <time datetime="2017-12-01">пн</time>
+                                                <time datetime="2017-12-02">вт</time>
+                                                <time datetime="2017-12-03">ср</time>
+                                                <time datetime="2017-12-04">чт</time>
+                                                <time datetime="2017-12-05">пт</time>
+                                                <time datetime="2017-12-05">сб</time>
+                                                <time datetime="2017-12-05">вс</time>
+                                            </time>
+                                            <time datetime="2017-W27" class="week week-first">
+                                                <time datetime="2017-04-01">30</time>
+                                                <time datetime="2017-04-01">31</time>
+                                                <time datetime="2017-06-01">1</time>
+                                                <time datetime="2017-06-02">2</time>
+                                                <time datetime="2017-06-03">3</time>
+                                                <time datetime="2017-06-04">4</time>
+                                                <time datetime="2017-06-05">5</time>
+                                            </time>
+                                            <time datetime="2017-W28" class="week">
+                                                <time datetime="2017-06-06">6</time>
+                                                <time datetime="2017-06-06">7</time>
+                                                <time datetime="2017-06-08">8</time>
+                                                <time datetime="2017-06-09">9</time>
+                                                <time datetime="2017-06-10">10</time>
+                                                <time datetime="2017-06-11">11</time>
+                                                <time datetime="2017-06-12">12</time>
+                                            </time>
+                                            <time datetime="2017-W29" class="week">
+                                                <time datetime="2017-06-13">13</time>
+                                                <time datetime="2017-06-14">14</time>
+                                                <time datetime="2017-06-15">15</time>
+                                                <time datetime="2017-06-16">16</time>
+                                                <time datetime="2017-06-17">17</time>
+                                                <time datetime="2017-06-18">18</time>
+                                                <time datetime="2017-06-19">19</time>
+                                            </time>
+                                            <time datetime="2017-W30" class="week">
+                                                <time datetime="2017-06-20">20</time>
+                                                <time datetime="2017-06-21">21</time>
+                                                <time datetime="2017-06-22">22</time>
+                                                <time datetime="2017-06-23">23</time>
+                                                <time datetime="2017-06-24">24</time>
+                                                <time datetime="2017-06-25">25</time>
+                                                <time datetime="2017-06-26">26</time>
+                                            </time>
+                                            <time datetime="2017-W31" class="week">
+                                                <time datetime="2017-06-27">27</time>
+                                                <time datetime="2017-06-28">28</time>
+                                                <time datetime="2017-06-29">29</time>
+                                                <time datetime="2017-06-30">30</time>
+                                                <time datetime="2017-06-31">31</time>
+                                                <time datetime="2017-04-31">1</time>
+                                                <time datetime="2017-04-31">2</time>
+                                            </time>
+                                        </time>
+                                    </time>
+                                </div>
+                                <div class="calendar-month calendar-month-4">
+                                    <time datetime="2017" class="year">
+                                        <time datetime="2017-07" class="month">
+                                            <span>Июль</span>
+                                            <time datetime="2017-W27" class="week week-heading">
+                                                <time datetime="2017-12-01">пн</time>
+                                                <time datetime="2017-12-02">вт</time>
+                                                <time datetime="2017-12-03">ср</time>
+                                                <time datetime="2017-12-04">чт</time>
+                                                <time datetime="2017-12-05">пт</time>
+                                                <time datetime="2017-12-05">сб</time>
+                                                <time datetime="2017-12-05">вс</time>
+                                            </time>
+                                            <time datetime="2017-W27" class="week week-first">
+                                                <time datetime="2017-04-01">30</time>
+                                                <time datetime="2017-04-01">31</time>
+                                                <time datetime="2017-07-01">1</time>
+                                                <time datetime="2017-07-02">2</time>
+                                                <time datetime="2017-07-03">3</time>
+                                                <time datetime="2017-07-04">4</time>
+                                                <time datetime="2017-07-05">5</time>
+                                            </time>
+                                            <time datetime="2017-W28" class="week">
+                                                <time datetime="2017-07-06">6</time>
+                                                <time datetime="2017-07-07">7</time>
+                                                <time datetime="2017-07-08">8</time>
+                                                <time datetime="2017-07-09">9</time>
+                                                <time datetime="2017-07-10">10</time>
+                                                <time datetime="2017-07-11">11</time>
+                                                <time datetime="2017-07-12">12</time>
+                                            </time>
+                                            <time datetime="2017-W29" class="week">
+                                                <time datetime="2017-07-13">13</time>
+                                                <time datetime="2017-07-14">14</time>
+                                                <time datetime="2017-07-15">15</time>
+                                                <time datetime="2017-07-16">16</time>
+                                                <time datetime="2017-07-17">17</time>
+                                                <time datetime="2017-07-18">18</time>
+                                                <time datetime="2017-07-19">19</time>
+                                            </time>
+                                            <time datetime="2017-W30" class="week">
+                                                <time datetime="2017-07-20">20</time>
+                                                <time datetime="2017-07-21">21</time>
+                                                <time datetime="2017-07-22">22</time>
+                                                <time datetime="2017-07-23">23</time>
+                                                <time datetime="2017-07-24">24</time>
+                                                <time datetime="2017-07-25">25</time>
+                                                <time datetime="2017-07-26">26</time>
+                                            </time>
+                                            <time datetime="2017-W31" class="week">
+                                                <time datetime="2017-07-27">27</time>
+                                                <time datetime="2017-07-28">28</time>
+                                                <time datetime="2017-07-29">29</time>
+                                                <time datetime="2017-07-30">30</time>
+                                                <time datetime="2017-07-31">31</time>
+                                                <time datetime="2017-04-01">1</time>
+                                                <time datetime="2017-04-01">2</time>
+                                            </time>
+                                        </time>
+                                    </time>
+                                </div>
+                                <div class="calendar-month calendar-month-5">
+                                    <time datetime="2017" class="year">
+                                        <time datetime="2017-08" class="month">
+                                            <span>Август</span>
+                                            <time datetime="2017-W27" class="week week-heading">
+                                                <time datetime="2017-12-01">пн</time>
+                                                <time datetime="2017-12-02">вт</time>
+                                                <time datetime="2017-12-03">ср</time>
+                                                <time datetime="2017-12-04">чт</time>
+                                                <time datetime="2017-12-05">пт</time>
+                                                <time datetime="2017-12-05">сб</time>
+                                                <time datetime="2017-12-05">вс</time>
+                                            </time>
+                                            <time datetime="2017-W27" class="week week-first">
+                                                <time datetime="2017-04-01">30</time>
+                                                <time datetime="2017-04-01">31</time>
+                                                <time datetime="2017-08-01">1</time>
+                                                <time datetime="2017-08-02">2</time>
+                                                <time datetime="2017-08-03">3</time>
+                                                <time datetime="2017-08-04">4</time>
+                                                <time datetime="2017-08-05">5</time>
+                                            </time>
+                                            <time datetime="2017-W28" class="week">
+                                                <time datetime="2017-08-06">6</time>
+                                                <time datetime="2017-08-08">7</time>
+                                                <time datetime="2017-08-08">8</time>
+                                                <time datetime="2017-08-09">9</time>
+                                                <time datetime="2017-08-10">10</time>
+                                                <time datetime="2017-08-11">11</time>
+                                                <time datetime="2017-08-12">12</time>
+                                            </time>
+                                            <time datetime="2017-W29" class="week">
+                                                <time datetime="2017-08-13">13</time>
+                                                <time datetime="2017-08-14">14</time>
+                                                <time datetime="2017-08-15">15</time>
+                                                <time datetime="2017-08-16">16</time>
+                                                <time datetime="2017-08-17">17</time>
+                                                <time datetime="2017-08-18">18</time>
+                                                <time datetime="2017-08-19">19</time>
+                                            </time>
+                                            <time datetime="2017-W30" class="week">
+                                                <time datetime="2017-08-20" class="event-planned">20</time>
+                                                <time datetime="2017-08-21">21</time>
+                                                <time datetime="2017-08-22">22</time>
+                                                <time datetime="2017-08-23">23</time>
+                                                <time datetime="2017-08-24" class="event-planned">24</time>
+                                                <time datetime="2017-08-25">25</time>
+                                                <time datetime="2017-08-26">26</time>
+                                            </time>
+                                            <time datetime="2017-W31" class="week">
+                                                <time datetime="2017-08-27">27</time>
+                                                <time datetime="2017-08-28">28</time>
+                                                <time datetime="2017-08-29">29</time>
+                                                <time datetime="2017-08-30">30</time>
+                                                <time datetime="2017-08-31">31</time>
+                                                <time datetime="2017-04-31">1</time>
+                                                <time datetime="2017-04-31">2</time>
+                                            </time>
+                                        </time>
+                                    </time>
+                                </div>
+                                <div class="calendar-month calendar-month-6">
+                                    <time datetime="2017" class="year">
+                                        <time datetime="2017-09" class="month">
+                                            <span>Сентябрь</span>
+                                            <time datetime="2017-W27" class="week week-heading">
+                                                <time datetime="2017-12-01">пн</time>
+                                                <time datetime="2017-12-02">вт</time>
+                                                <time datetime="2017-12-03">ср</time>
+                                                <time datetime="2017-12-04">чт</time>
+                                                <time datetime="2017-12-05">пт</time>
+                                                <time datetime="2017-12-05">сб</time>
+                                                <time datetime="2017-12-05">вс</time>
+                                            </time>
+                                            <time datetime="2017-W27" class="week week-first">
+                                                <time datetime="2017-04-01">30</time>
+                                                <time datetime="2017-04-01">31</time>
+                                                <time datetime="2017-09-01">1</time>
+                                                <time datetime="2017-09-02">2</time>
+                                                <time datetime="2017-09-03">3</time>
+                                                <time datetime="2017-09-04">4</time>
+                                                <time datetime="2017-09-05">5</time>
+                                            </time>
+                                            <time datetime="2017-W28" class="week">
+                                                <time datetime="2017-09-06">6</time>
+                                                <time datetime="2017-09-09">7</time>
+                                                <time datetime="2017-09-08">8</time>
+                                                <time datetime="2017-09-09">9</time>
+                                                <time datetime="2017-09-10">10</time>
+                                                <time datetime="2017-09-11">11</time>
+                                                <time datetime="2017-09-12">12</time>
+                                            </time>
+                                            <time datetime="2017-W29" class="week">
+                                                <time datetime="2017-09-13">13</time>
+                                                <time datetime="2017-09-14">14</time>
+                                                <time datetime="2017-09-15">15</time>
+                                                <time datetime="2017-09-16">16</time>
+                                                <time datetime="2017-09-17">17</time>
+                                                <time datetime="2017-09-18">18</time>
+                                                <time datetime="2017-09-19">19</time>
+                                            </time>
+                                            <time datetime="2017-W30" class="week">
+                                                <time datetime="2017-09-20">20</time>
+                                                <time datetime="2017-09-21">21</time>
+                                                <time datetime="2017-09-22">22</time>
+                                                <time datetime="2017-09-23">23</time>
+                                                <time datetime="2017-09-24">24</time>
+                                                <time datetime="2017-09-25">25</time>
+                                                <time datetime="2017-09-26">26</time>
+                                            </time>
+                                            <time datetime="2017-W31" class="week">
+                                                <time datetime="2017-09-27">27</time>
+                                                <time datetime="2017-09-28">28</time>
+                                                <time datetime="2017-09-29">29</time>
+                                                <time datetime="2017-09-30">30</time>
+                                                <time datetime="2017-09-31">31</time>
+                                                <time datetime="2017-04-01">1</time>
+                                                <time datetime="2017-04-01">2</time>
+                                            </time>
+                                        </time>
+                                    </time>
+                                </div>
+                                <div class="calendar-month calendar-month-7">
+                                    <time datetime="2017" class="year">
+                                        <time datetime="2017-10" class="month">
+                                            <span>Октябрь</span>
+                                            <time datetime="2017-W27" class="week week-heading">
+                                                <time datetime="2017-12-01">пн</time>
+                                                <time datetime="2017-12-02">вт</time>
+                                                <time datetime="2017-12-03">ср</time>
+                                                <time datetime="2017-12-04">чт</time>
+                                                <time datetime="2017-12-05">пт</time>
+                                                <time datetime="2017-12-05">сб</time>
+                                                <time datetime="2017-12-05">вс</time>
+                                            </time>
+                                            <time datetime="2017-W27" class="week week-first">
+                                                <time datetime="2017-04-01">30</time>
+                                                <time datetime="2017-04-01">31</time>
+                                                <time datetime="2017-10-01">1</time>
+                                                <time datetime="2017-10-02">2</time>
+                                                <time datetime="2017-10-03">3</time>
+                                                <time datetime="2017-10-04">4</time>
+                                                <time datetime="2017-10-05">5</time>
+                                            </time>
+                                            <time datetime="2017-W28" class="week">
+                                                <time datetime="2017-10-06">6</time>
+                                                <time datetime="2017-10-10">7</time>
+                                                <time datetime="2017-10-08">8</time>
+                                                <time datetime="2017-10-09">9</time>
+                                                <time datetime="2017-10-10">10</time>
+                                                <time datetime="2017-10-11">11</time>
+                                                <time datetime="2017-10-12">12</time>
+                                            </time>
+                                            <time datetime="2017-W29" class="week">
+                                                <time datetime="2017-10-13">13</time>
+                                                <time datetime="2017-10-14">14</time>
+                                                <time datetime="2017-10-15">15</time>
+                                                <time datetime="2017-10-16">16</time>
+                                                <time datetime="2017-10-17">17</time>
+                                                <time datetime="2017-10-18">18</time>
+                                                <time datetime="2017-10-19">19</time>
+                                            </time>
+                                            <time datetime="2017-W30" class="week">
+                                                <time datetime="2017-10-20">20</time>
+                                                <time datetime="2017-10-21">21</time>
+                                                <time datetime="2017-10-22">22</time>
+                                                <time datetime="2017-10-23">23</time>
+                                                <time datetime="2017-10-24">24</time>
+                                                <time datetime="2017-10-25">25</time>
+                                                <time datetime="2017-10-26">26</time>
+                                            </time>
+                                            <time datetime="2017-W31" class="week">
+                                                <time datetime="2017-10-27">27</time>
+                                                <time datetime="2017-10-28">28</time>
+                                                <time datetime="2017-10-29">29</time>
+                                                <time datetime="2017-10-30">30</time>
+                                                <time datetime="2017-10-31">31</time>
+                                                <time datetime="2017-04-01">1</time>
+                                                <time datetime="2017-04-01">2</time>
+                                            </time>
+                                        </time>
+                                    </time>
+                                </div>
+                                <div class="calendar-month calendar-month-8">
+                                    <time datetime="2017" class="year">
+                                        <time datetime="2017-11" class="month">
+                                            <span>Ноябрь</span>
+                                            <time datetime="2017-W27" class="week week-heading">
+                                                <time datetime="2017-12-01">пн</time>
+                                                <time datetime="2017-12-02">вт</time>
+                                                <time datetime="2017-12-03">ср</time>
+                                                <time datetime="2017-12-04">чт</time>
+                                                <time datetime="2017-12-05">пт</time>
+                                                <time datetime="2017-12-05">сб</time>
+                                                <time datetime="2017-12-05">вс</time>
+                                            </time>
+                                            <time datetime="2017-W27" class="week week-first">
+                                                <time datetime="2017-04-01">30</time>
+                                                <time datetime="2017-04-01">31</time>
+                                                <time datetime="2017-11-01">1</time>
+                                                <time datetime="2017-11-02">2</time>
+                                                <time datetime="2017-11-03">3</time>
+                                                <time datetime="2017-11-04">4</time>
+                                                <time datetime="2017-11-05">5</time>
+                                            </time>
+                                            <time datetime="2017-W28" class="week">
+                                                <time datetime="2017-11-06">6</time>
+                                                <time datetime="2017-11-11">7</time>
+                                                <time datetime="2017-11-08">8</time>
+                                                <time datetime="2017-11-09">9</time>
+                                                <time datetime="2017-11-10">10</time>
+                                                <time datetime="2017-11-11">11</time>
+                                                <time datetime="2017-11-12">12</time>
+                                            </time>
+                                            <time datetime="2017-W29" class="week">
+                                                <time datetime="2017-11-13">13</time>
+                                                <time datetime="2017-11-14">14</time>
+                                                <time datetime="2017-11-15">15</time>
+                                                <time datetime="2017-11-16">16</time>
+                                                <time datetime="2017-11-17">17</time>
+                                                <time datetime="2017-11-18">18</time>
+                                                <time datetime="2017-11-19">19</time>
+                                            </time>
+                                            <time datetime="2017-W30" class="week">
+                                                <time datetime="2017-11-20">20</time>
+                                                <time datetime="2017-11-21">21</time>
+                                                <time datetime="2017-11-22">22</time>
+                                                <time datetime="2017-11-23">23</time>
+                                                <time datetime="2017-11-24">24</time>
+                                                <time datetime="2017-11-25">25</time>
+                                                <time datetime="2017-11-26">26</time>
+                                            </time>
+                                            <time datetime="2017-W31" class="week">
+                                                <time datetime="2017-11-27">27</time>
+                                                <time datetime="2017-11-28">28</time>
+                                                <time datetime="2017-11-29">29</time>
+                                                <time datetime="2017-11-30">30</time>
+                                                <time datetime="2017-11-31">31</time>
+                                                <time datetime="2017-04-01">1</time>
+                                                <time datetime="2017-04-01">2</time>
+                                            </time>
+                                        </time>
+                                    </time>
+                                </div>
+                                <div class="calendar-month calendar-month-9">
+                                    <time datetime="2017" class="year">
+                                        <time datetime="2017-12" class="month">
+                                            <span>Декабрь</span>
+                                            <time datetime="2017-W27" class="week week-heading">
+                                                <time datetime="2017-12-01">пн</time>
+                                                <time datetime="2017-12-02">вт</time>
+                                                <time datetime="2017-12-03">ср</time>
+                                                <time datetime="2017-12-04">чт</time>
+                                                <time datetime="2017-12-05">пт</time>
+                                            </time>
+                                            <time datetime="2017-W27" class="week week-first">
+                                                <time datetime="2017-04-01">30</time>
+                                                <time datetime="2017-04-01">31</time>
+                                                <time datetime="2017-12-01">1</time>
+                                                <time datetime="2017-12-02">2</time>
+                                                <time datetime="2017-12-03">3</time>
+                                                <time datetime="2017-12-04">4</time>
+                                                <time datetime="2017-12-05">5</time>
+                                            </time>
+                                            <time datetime="2017-W28" class="week">
+                                                <time datetime="2017-12-06">6</time>
+                                                <time datetime="2017-12-12">7</time>
+                                                <time datetime="2017-12-08">8</time>
+                                                <time datetime="2017-12-09">9</time>
+                                                <time datetime="2017-12-10">10</time>
+                                                <time datetime="2017-12-11">11</time>
+                                                <time datetime="2017-12-12">12</time>
+                                            </time>
+                                            <time datetime="2017-W29" class="week">
+                                                <time datetime="2017-12-13">13</time>
+                                                <time datetime="2017-12-14">14</time>
+                                                <time datetime="2017-12-15">15</time>
+                                                <time datetime="2017-12-16">16</time>
+                                                <time datetime="2017-12-17">17</time>
+                                                <time datetime="2017-12-18">18</time>
+                                                <time datetime="2017-12-19">19</time>
+                                            </time>
+                                            <time datetime="2017-W30" class="week">
+                                                <time datetime="2017-12-20">20</time>
+                                                <time datetime="2017-12-21">21</time>
+                                                <time datetime="2017-12-22">22</time>
+                                                <time datetime="2017-12-23">23</time>
+                                                <time datetime="2017-12-24">24</time>
+                                                <time datetime="2017-12-25">25</time>
+                                                <time datetime="2017-12-26">26</time>
+                                            </time>
+                                            <time datetime="2017-W31" class="week">
+                                                <time datetime="2017-12-27">27</time>
+                                                <time datetime="2017-12-28">28</time>
+                                                <time datetime="2017-12-29">29</time>
+                                                <time datetime="2017-12-30">30</time>
+                                                <time datetime="2017-12-31">31</time>
+                                                <time datetime="2017-12-01">1</time>
+                                                <time datetime="2017-12-02">2</time>
+                                            </time>
+                                        </time>
+                                    </time>
+                                </div>
+                               <div class="calendar-month calendar-month-10">
+    <time datetime="2018" class="year">
+        <time datetime="2018-01" class="month">
+            <span>Январь</span>
+            <time datetime="2017-W27" class="week week-heading">
+                <time datetime="2017-01-01">пн</time>
+                <time datetime="2017-01-02">вт</time>
+                <time datetime="2017-01-03">ср</time>
+                <time datetime="2017-01-04">чт</time>
+                <time datetime="2017-01-05">пт</time>
+            </time>
+            <time datetime="2017-W27" class="week week-first">
+                <time datetime="2017-04-01">30</time>
+                <time datetime="2017-04-01">31</time>
+                <time datetime="2017-01-01">1</time>
+                <time datetime="2017-01-02">2</time>
+                <time datetime="2017-01-03">3</time>
+                <time datetime="2017-01-04">4</time>
+                <time datetime="2017-01-05">5</time>
+            </time>
+            <time datetime="2017-W28" class="week">
+                <time datetime="2017-01-06">6</time>
+                <time datetime="2017-01-01">7</time>
+                <time datetime="2017-01-08">8</time>
+                <time datetime="2017-01-09">9</time>
+                <time datetime="2017-01-10">10</time>
+                <time datetime="2017-01-11">11</time>
+                <time datetime="2017-01-01">12</time>
+            </time>
+            <time datetime="2017-W29" class="week">
+                <time datetime="2017-01-13">13</time>
+                <time datetime="2017-01-14">14</time>
+                <time datetime="2017-01-15">15</time>
+                <time datetime="2017-01-16">16</time>
+                <time datetime="2017-01-17">17</time>
+                <time datetime="2017-01-18">18</time>
+                <time datetime="2017-01-19">19</time>
+            </time>
+            <time datetime="2017-W30" class="week">
+                <time datetime="2017-01-20">20</time>
+                <time datetime="2017-01-21">21</time>
+                <time datetime="2017-01-22">22</time>
+                <time datetime="2017-01-23">23</time>
+                <time datetime="2017-01-24">24</time>
+                <time datetime="2017-01-25">25</time>
+                <time datetime="2017-01-26">26</time>
+            </time>
+            <time datetime="2017-W31" class="week">
+                <time datetime="2017-01-27">27</time>
+                <time datetime="2017-01-28">28</time>
+                <time datetime="2017-01-29">29</time>
+                <time datetime="2017-01-30">30</time>
+                <time datetime="2017-01-31">31</time>
+                <time datetime="2017-01-01">1</time>
+                <time datetime="2017-01-02">2</time>
+            </time>
+        </time>
+    </time>
+</div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="section-3 section-schedule">
+                    <h3 class="schedule-title">Расписание проведение Модулей</h3>
+                    <div class="schedule-wrapper">
+                        <table class="schedule-table schedule-table-small">
+                            <tbody class="schedule-block schedule-block-1">
+                                <tr class="schedule-row schedule-row-1">
+                                    <td class="schedule-data schedule-heading">Название</td>
+                                    <td class="schedule-data event-name">Модуль 1</td>
+                                </tr>
+                                <tr class="schedule-row schedule-row-2">
+                                    <td class="schedule-data schedule-heading">Статус</td>
+                                    <td class="schedule-data"><img src="../img/icons/icon-status-plus.png" alt="" class="status-icon"></td>
+                                    <!-- <td class="schedule-data"><img src="../img/icons/icon-status-minus.png" alt="" class="status-icon"></td> -->
+                                </tr>
+                                <tr class="schedule-row schedule-row-3">
+                                    <td class="schedule-data schedule-heading">Дата</td>
+                                    <td class="schedule-data">14 Апреля</td>
+                                </tr>
+                                <tr class="schedule-row schedule-row-4">
+                                    <td class="schedule-data schedule-heading">Время</td>
+                                    <td class="schedule-data">Начало в 20.00</td>
+                                </tr>
+                            </tbody>
+                            <tbody class="schedule-block schedule-block-2">
+                                <tr class="schedule-row schedule-row-1">
+                                    <td class="schedule-data schedule-heading">Название</td>
+                                    <td class="schedule-data event-name">Модуль 1</td>
+                                </tr>
+                                <tr class="schedule-row schedule-row-2">
+                                    <td class="schedule-data schedule-heading">Статус</td>
+                                    <td class="schedule-data"><img src="../img/icons/icon-status-plus.png" alt="" class="status-icon"></td>
+                                    <!-- <td class="schedule-data"><img src="../img/icons/icon-status-minus.png" alt="" class="status-icon"></td> -->
+                                </tr>
+                                <tr class="schedule-row schedule-row-3">
+                                    <td class="schedule-data schedule-heading">Дата</td>
+                                    <td class="schedule-data">14 Апреля</td>
+                                </tr>
+                                <tr class="schedule-row schedule-row-4">
+                                    <td class="schedule-data schedule-heading">Время</td>
+                                    <td class="schedule-data">Начало в 20.00</td>
+                                </tr>
+                            </tbody>
+                            <tbody class="schedule-block schedule-block-3">
+                                <tr class="schedule-row schedule-row-1">
+                                    <td class="schedule-data schedule-heading">Название</td>
+                                    <td class="schedule-data event-name">Модуль 1</td>
+                                </tr>
+                                <tr class="schedule-row schedule-row-2">
+                                    <td class="schedule-data schedule-heading">Статус</td>
+                                    <td class="schedule-data"><img src="../img/icons/icon-status-plus.png" alt="" class="status-icon"></td>
+                                    <!-- <td class="schedule-data"><img src="../img/icons/icon-status-minus.png" alt="" class="status-icon"></td> -->
+                                </tr>
+                                <tr class="schedule-row schedule-row-3">
+                                    <td class="schedule-data schedule-heading">Дата</td>
+                                    <td class="schedule-data">14 Апреля</td>
+                                </tr>
+                                <tr class="schedule-row schedule-row-4">
+                                    <td class="schedule-data schedule-heading">Время</td>
+                                    <td class="schedule-data">Начало в 20.00</td>
+                                </tr>
+                            </tbody>
+                            <tbody class="schedule-block schedule-block-4">
+                                <tr class="schedule-row schedule-row-1">
+                                    <td class="schedule-data schedule-heading">Название</td>
+                                    <td class="schedule-data event-name">Модуль 1</td>
+                                </tr>
+                                <tr class="schedule-row schedule-row-2">
+                                    <td class="schedule-data schedule-heading">Статус</td>
+                                    <td class="schedule-data"><img src="../img/icons/icon-status-plus.png" alt="" class="status-icon"></td>
+                                    <!-- <td class="schedule-data"><img src="../img/icons/icon-status-minus.png" alt="" class="status-icon"></td> -->
+                                </tr>
+                                <tr class="schedule-row schedule-row-3">
+                                    <td class="schedule-data schedule-heading">Дата</td>
+                                    <td class="schedule-data">14 Апреля</td>
+                                </tr>
+                                <tr class="schedule-row schedule-row-4">
+                                    <td class="schedule-data schedule-heading">Время</td>
+                                    <td class="schedule-data">Начало в 20.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="schedule-table schedule-table-big">
+                            <tbody class="schedule-block">
+                                <tr class="schedule-row schedule-row-1">
+                                    <td class="schedule-heading schedule-data">Название</td>
+                                    <td class="schedule-heading schedule-data">Статус</td>
+                                    <td class="schedule-heading schedule-data">Дата</td>
+                                    <td class="schedule-heading schedule-data">Время</td>
+                                </tr>
+                                </tbody>
+                                 <tbody class="schedule-block">
+                                <tr class="schedule-row schedule-row-2">
+                                    <td class="schedule-data event-name">Модуль 1</td>
+                                    <td class="schedule-data">
+                                        <img src="../img/icons/icon-status-plus.png" alt="" class="status-icon">
+                                    </td>
+                                    <td class="schedule-data">14 Апреля</td>
+                                    <td class="schedule-data">Начало в 20.00</td>
+                                </tr>
+                                </tbody>
+                                 <tbody class="schedule-block">
+                                <tr class="schedule-row schedule-row-3">
+                                    <td class="schedule-data event-name">Модуль 2</td>
+                                    <td class="schedule-data">
+                                        <img src="../img/icons/icon-status-minus.png" alt="" class="status-icon">
+                                    </td>
+                                    <td class="schedule-data">14 Апреля</td>
+                                    <td class="schedule-data">Начало в 20.00</td>
+                                </tr>
+                                </tbody>
+                                 <tbody class="schedule-block">
+                                <tr class="schedule-row schedule-row-4">
+                                    <td class="schedule-data event-name">Вопрос -Ответ</td>
+                                    <td class="schedule-data">
+                                        <img src="../img/icons/icon-status-minus.png" alt="" class="status-icon">
+                                    </td>
+                                    <td class="schedule-data">14 Апреля</td>
+                                    <td class="schedule-data">Начало в 20.00</td>
+                                </tr>
+                                </tbody>
+                                 <tbody class="schedule-block">
+                                <tr class="schedule-row schedule-row-2">
+                                    <td class="schedule-data event-name">Модуль 1</td>
+                                    <td class="schedule-data">
+                                        <img src="../img/icons/icon-status-minus.png" alt="" class="status-icon">
+                                    </td>
+                                    <td class="schedule-data">14 Апреля</td>
+                                    <td class="schedule-data">Начало в 20.00</td>
+                                </tr>
+                                </tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer class="footer-cabinet">
+        <div class="footer-cabinet-top flex">
+            <div class="contacts-wrapper hidden-from-md">
+                <p class="contacts-title">Заботливая служба поддержки</p>
+                <ul class="phone-list">
+                    <li class="phone-list-item phone-list-item-1"><a href="tel:380442213224">+38 044-221-32-24</a></li>
+                    <li class="phone-list-item phone-list-item-2"><a href="tel:74951338224">+7 495-133-82-24</a></li>
+                </ul>
+            </div>
+            <div class="support-references">
+                <p class="ref-title text-weak">Задать вопрос</p>
+                <div class="support-chats flex ">
+                    <div class="support-chat telegram"><a href="javascript:void(0);" class="support-link"></a></div>
+                    <div class="support-chat viber"><a href="javascript:void(0);" class="support-link"></a></div>
+                    <div class="support-chat skype"><a href="javascript:void(0);" class="support-link"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-cabinet-bottom">
+            <div class="copyrights">
+                <p>© 2017 Экстремальный Старт.</p>
+            </div>
+        </div>
+    </footer>
+<!--     <link rel="stylesheet" href="../css/main.min.css"> -->
+    <script src="../libs/libs.min.js"></script>
+    <script src="../js/scripts.min.js"></script>
+</body>
+
+</html>

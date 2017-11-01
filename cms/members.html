@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldCoach | Система администрирования участников</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/local.css" />
+     <link rel="stylesheet" type="text/css" href="css/simplePagination.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.simplePagination.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">GoldCoach</span>
+                </button>
+                <a class="navbar-brand" href="index.html">>GoldCoach</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li><a href="index.html"><i class="fa fa-bullseye"></i>Главная</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-list-ol"></i> Участники</a></li>
+                    <li><a href="rassilka.html"><i class="fa fa-globe"></i> Рассылка</a></li>
+                    <li><a href="#"><i class="fa fa-tasks"></i> Какой-то ещё пункт</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right navbar-user">
+                    <li class="dropdown messages-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Оповещения <span class="badge">2</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">2 новых оповещения</li>
+                            <li class="message-preview">
+                                <a href="#">
+                                    <span class="avatar"><i class="fa fa-bell"></i></span>
+                                    <span class="message"> Оповещение безопасности</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="message-preview">
+                                <a href="#">
+                                    <span class="avatar"><i class="fa fa-bell"></i></span>
+                                    <span class="message">Оповещение о пользователе</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Перейти к входящим<span class="badge">2</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown user-dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>Администратор<b class="caret"></b></a>
+                       <ul class="dropdown-menu">
+                           <li><a href="#"><i class="fa fa-gear"></i>Настройки</a></li>
+                           <li class="divider"></li>
+                           <li><a href="#"><i class="fa fa-power-off"></i>Выход</a></li>
+                       </ul>
+                   </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Система администрирования участников</h1>
+
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Все участники проекта</h3>
+                        </div>
+                        <div class="panel-body center">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-offset-6 col-md-6 ">
+                                        <div class="input-group search">
+                                          <input type="text" class="form-control" placeholder="Поиск">
+                                          <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">&#128269;</button>
+                                          </span>
+                                        </div>
+                                  </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="table-head">
+                                                <tr>
+                                                    <th>Имя Фамилия</th>
+                                                    <th>Имейл</th>
+                                                    <th>Пакет/программа</th>
+                                                    <th>ДЗ1</th>
+                                                    <th>ДЗ2</th>
+                                                    <th>Доступ</th>
+                                                    <th>Статус</th>
+                                                    <th>Скинуть пароль</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="person.html">Иван Иванов</a>
+                                                    </td>
+                                                    <td>inanov@gmail.com</td>
+                                                    <td>Программа "Some program"</td>
+                                                    <td class="text-center">&#10003;</td>
+                                                    <td class="text-center">&#8722;</td>
+                                                    <td>Не выслан</td>
+                                                    <td>Исключен</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Сбросить пароль</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="person.html">Иван Иванов</a>
+                                                    </td>
+                                                    <td>inanov@gmail.com</td>
+                                                    <td>Программа "Some program"</td>
+                                                    <td class="text-center">&#10003;</td>
+                                                    <td class="text-center">&#10003;</td>
+                                                    <td>Не выслан</td>
+                                                    <td>Исключен</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Сбросить пароль</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">Иван Иванов</a>
+                                                    </td>
+                                                    <td>inanov@gmail.com</td>
+                                                    <td>Программа "Some program"</td>
+                                                    <td class="text-center">&#8722;</td>
+                                                    <td class="text-center">&#8722;</td>
+                                                    <td>Не выслан</td>
+                                                    <td>Исключен</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Сбросить пароль</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title" id="myModalLabel">inanov@gmail.com</h4>
+                                              </div>
+                                              <div class="modal-body">
+                                                Пароль успешно изменен на
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+<script>
+    $(function() {
+    $(selector).pagination({
+        items: 50,
+        itemsOnPage: 10,
+        cssStyle: 'light-theme'
+    });
+});</script>
+</body>
+</html>

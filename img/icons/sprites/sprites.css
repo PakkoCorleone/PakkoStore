@@ -1,0 +1,46 @@
+.bg-flag_ru {
+    width: 18px; height: 12px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+
+.bg-flag_ua {
+    width: 18px; height: 12px;
+    background: url('css_sprites.png') -48px -10px;
+}
+
+
+.bg-skype_24 {
+    width: 23px; height: 24px;
+    background: url('css_sprites.png') -86px -10px;
+}
+
+
+.bg-skype_31 {
+    width: 31px; height: 32px;
+    background: url('css_sprites.png') -215px -10px;
+}
+
+
+.bg-telegram_24 {
+    width: 23px; height: 24px;
+    background: url('css_sprites.png') -129px -10px;
+}
+
+
+.bg-telegram_31 {
+    width: 31px; height: 32px;
+    background: url('css_sprites.png') -266px -10px;
+}
+
+
+.bg-viber_24 {
+    width: 23px; height: 24px;
+    background: url('css_sprites.png') -172px -10px;
+}
+
+
+.bg-viber_31 {
+    width: 31px; height: 32px;
+    background: url('css_sprites.png') -317px -10px;
+}
